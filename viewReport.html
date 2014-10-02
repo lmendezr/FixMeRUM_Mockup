@@ -12,7 +12,7 @@
     <link href='assets/images/meta_icons/apple-touch-icon-114x114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
     <link href='assets/images/meta_icons/apple-touch-icon-144x144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
     <!-- / START - page related stylesheets [optional] -->
-    
+    <link href="assets/stylesheets/plugins/select2/select2.css" media="all" rel="stylesheet" type="text/css" />    
     <!-- / END - page related stylesheets [optional] -->
     <!-- / bootstrap [required] -->
     <link href="assets/stylesheets/bootstrap/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
@@ -211,13 +211,13 @@
             </form>
           </div>
           <ul class='nav nav-stacked'>
-            <li class='active'>
+            <li class=''>
               <a href='index.html'>
                 <i class='icon-home'></i>
                 <span>Home</span>
               </a>
             </li>
-            <li class=''>
+            <li class='active'>
               <a href='create_report.html'>
                 <i class='icon-pencil'></i>
                 <span>Create Report</span>
@@ -297,103 +297,165 @@
         <div class='container'>
           <div class='row' id='content-wrapper'>
             <div class='col-xs-12'>
-
-              <div class="col-sm-9 col-lg-10">
-                <div class="well profile">
-                  <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                      <div class="text-center">
-                        <figure>
-                          <img src="http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png" alt="" class="img-circle img-responsive">
-                        </figure>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-8 ">
-                      <h2>Broken Toilet </h2>
-                      <p>
-                        <strong>Category</strong>
-                        Damaged Bathroom
-                      </p>
-                      <p>
-                        <strong>Sub Category:</strong>
-                        Plumbing
-                      </p>
-                      <p>
-                        <strong>Description:</strong>
-                        Toilet is leaking water in the sides. There is also no toilet paper :( 
-                      </p>
-                      <p>
-                        <strong>Status:</strong>
-                        Unassigned
-                      </p>
-                      
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row col-xs-12 text-center">
-                    <div class="col-xs-12 col-sm-4 col-md-4 emphasis">
-                      <a class="btn btn-success btn-block" href="edit_report_admin.html">Edit</a> 
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 emphasis">
-                      <div class="btn-group dropup btn-block">
-                        <button type="button" class="btn btn-primary btn-block" data-toggle="dropdown"><span class="fa fa-gear"></span> Options </button>
-                        
-                        <ul class="dropdown-menu text-left" role="menu">
-                          <li><a href="#"> Crear Usuarios   <i class="icon-user pull-right"></i></a></li>
-                         <!--  <li><a href="#"><span class="fa fa-envelope pull-right"></span> Exportar PDF </a></li>
-                          <li><a href="#"><span class="fa fa-envelope pull-right"></span> Exportar CSV </a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 emphasis">
-                      <a class="btn btn-warning btn-block" href="index.html">Back</a>
+              <div class='row'>
+                <div class='col-sm-12'>
+                  <div class='page-header'>
+                    <h1 class='pull-left'>
+                      <i class='icon-pencil'></i>
+                      <span>Create Report</span>
+                    </h1>
+                    <div class='pull-right'>
+                      <ul class='breadcrumb'>
+                        <li>
+                          <a href='index.html'>
+                            <i class='icon-home'></i>
+                          </a>
+                        </li>
+                        <li class='separator'>
+                          <i class='icon-angle-right'></i>
+                        </li>
+                        <li>
+                          Reports
+                        </li>
+                        <li class='separator'>
+                          <i class='icon-angle-right'></i>
+                        </li>
+                        <li class='active'>Create Report</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
 
+              <div class='row'>
+                <div class='col-sm-3 col-lg-2'>
+                  <div class='box'>
+                    <div class='box-content'>
+                      <img class="img-responsive" src="http://placehold.it/230x230&text=Photo" />
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-9 col-lg-10' >
+                  <div class='box bordered-box blue-border'>
+                    <div class='box-content box-double-padding'>
+                      <form class='form' style='margin-bottom: 0;'>
+                        <fieldset>
+                          <div class="col-sm-4" style="width: 730px;">
+                            <div class='box'>
+                              <div class='lead'>
+                                <i class='icon-tasks text-contrast'></i>
+                                General Info
+                              </div>
+                              <div class='form-group'>
+                              <label style='font-size: 18px'>Category</label>
+                              <small class='text-muted' style='font-size: 18px'>Broken Toilet</small>
+                            </div>
+                            <div class='form-group'>
+                              <label style='font-size: 18px'>Sub-category</label>
+                              <small class='text-muted' style='font-size: 18px'>No toilet paper</small>
+                            </div>
 
-              <div class='col-sm-9 col-lg-10'>
-                <div class='box bordered-box blue-border'>
-                  <div class='box-content box-double-padding'>
-                    <form class='form' style='margin-bottom: 0;'>
-                      <fieldset>
-                        
-                      </fieldset>
-                      <hr class='hr-normal'>
-                      <fieldset>
-                        <div class='col-sm-4' style="width: 730px;">
-                          <div class='box'>
-                            <div class='lead'>
-                              <i class='icon-building contrast'></i>
-                              Location
-                            </div>
                             <div class='form-group'>
-                              <label style='font-size: 16px'>Location</label>
-                              <small class='text-muted' style='font-size: 18px'>Indoor</small>
-                            </div>
-                            <div class='form-group'>
-                              <label style='font-size: 16px'>Building</label>
-                              <small class='text-muted' style='font-size: 18px'>Stefani</small>
-                            </div>
-
-                            <div class='form-group'>
-                              <label style='font-size: 16px'>Room Number</label>
-                              <small class='text-muted' style='font-size: 18px'>212 </small>
+                              <label style='font-size: 18px'>Description</label>
+                              <small class='text-muted' style='font-size: 18px'>Toilet is leaking water in the sides. There is also no toilet paper :( </small>
                             </div>
                             </div>
                           </div>
-                        </div>
-                        
-                      </fieldset>
-                      <div class='form-actions'>
-                        <div class='row'>
-                          <div class='col-sm-7 col-sm-offset-5'>
-                            
+                          <div class='col-sm-7 col-sm-offset-1'>
+                           
+                          </div>
+                        </fieldset>
+                        <hr class='hr-normal'>
+                        <fieldset>
+                          <div class='col-sm-4'>
+                            <div class='box'>
+                              <div class='lead'>
+                                <i class='icon-building contrast'></i>
+                                Location
+                              </div>
+                              <small class='text-muted'>Proin eu nibh ut urna tristique rhoncus. Sed euismod, quam sed dignissim imperdiet, nulla leo vehicula mi, a sagittis lacus augue nec sapien.</small>
+                            </div>
+                          </div>
+                          <div class='col-sm-7 col-sm-offset-1'>
+                            <div class='form-group'>
+                              <label>Area</label>
+                              <select class='select2 form-control'>
+                                <option value='ADEM'>Administracion de Empresas</option>
+                                <option value='ASIS'>Asistencia Economica</option>
+                                <option value='BAOR'>Banda y Orquesta</option>
+                                <option value='BIBL'>Biblioteca General</option>
+                                <option value='TENI'>Cancha de Tennis</option>
+                                <option value='CH'>Carlos E. Chardon</option>
+                                <option value='CES'>Centro de Estudiantes</option>
+                                <option value='CID'>Centro de Investigacion</option>
+                                <option value='CIMA'>Ciencias Marinas</option>
+                                <option value='MANG'>Coliseo Rafael A. Mangual</option>
+                                <option value='DECA'>Decanato de Estudiantes</option>
+                                <option value='POLI'>Departamento de Policias</option>
+                                <option value='BIOL'>Edificio de Biologia</option>
+                                <option value='QUIM'>Edificio de Quimica</option>
+                                <option value='ENFE'>Enfermeria</option>
+                                <option value='ALZA'>Finca Alzamora</option>
+                                <option value='FISI'>Fisica</option>
+                                <option value='GEOL'>Geologia</option>
+                                <option value='GYM'>Gimnasio Angel F. Espada</option>
+                                <option value='HOTL'>Hotel Colegial</option>
+                                <option value='INCI'>Ingenieria Civil</option>
+                                <option value='ININ'>Ingenieria Industrial</option>
+                                <option value='INME'>Ingenieria Mecanica</option>
+                                <option value='INQU'>Ingenieria Quimica</option>
+                                <option value='PINE'>Jesus T. Pineiro</option>
+                                <option value='STEF'>Luis A. Stefani</option>
+                                <option value='MATE'>Monzon</option>
+                                <option value='ROTC'>Mayor Rafael Sanchez ROTC</option>
+                                <option value='PAGA'>Pagaduria</option>
+                                <option value='PISC'>Piscina Alumni</option>
+                                <option value='PIST'>Pista Nueva</option>
+                                <option value='RECT'>Rectoria</option>
+                                <option value='REGI'>Registraduria</option>
+                                <option value='HIDA'>Sanchez Hidalgo</option>
+                                <option value='MEDI'>Servicios Medicos</option>
+                                <option value='-1'>Other</option>
+                              </select>
+                            </div>
+                            <div class='form-group'>
+                              <label>Other Area:</label>
+                              <input class='form-control' disabled id='full-name1' type='text'>
+                            </div>
+                            <div class='form-group'>
+                              <label>Section</label>
+                              <select class='select2 form-control'>
+                                <option value='201'>201</option>
+                                <option value='202'>202</option>
+                                <option value='203'>203</option>
+                                <option value='204'>204</option>
+                                <option value='205'>205</option>
+                                <option value='206'>206</option>
+                                <option value='207'>207</option>
+                                <option value='208'>208</option>
+                                <option value='209'>209</option>
+                                <option value='210'>210</option>
+                                <option value='-1'>Other</option>
+                              </select>
+                            </div>
+                            <div class='form-group'>
+                              <label>Other Section:</label>
+                              <input class='form-control' disabled id='full-name1' type='text'>
+                            </div>
+                          </div>
+                        </fieldset>
+                        <div class='form-actions'>
+                          <div class='row'>
+                            <div class='col-sm-7 col-sm-offset-5'>
+                              <div class='btn btn-primary btn-lg'>
+                                <i class='icon-save'></i>
+                                Save
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </form>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -403,7 +465,11 @@
             <div class='footer-wrapper'>
               <div class='row'>
                 <div class='col-sm-6 text'>
-                  Copyright © 2014 FixMeRUM
+                  Copyright © 2013 Your Project Name
+                </div>
+                <div class='col-sm-6 buttons'>
+                  <a class="btn btn-link" href="http://www.bublinastudio.com/flatty">Preview</a>
+                  <a class="btn btn-link" href="https://wrapbootstrap.com/theme/flatty-flat-administration-template-WB0P6NR1N">Purchase</a>
                 </div>
               </div>
             </div>
@@ -432,7 +498,8 @@
     <!-- / demo file [not required!] -->
     <script src="assets/javascripts/demo.js" type="text/javascript"></script>
     <!-- / START - page related files and scripts [optional] -->
-    
+    <script src="assets/javascripts/plugins/select2/select2.js" type="text/javascript"></script>    
     <!-- / END - page related files and scripts [optional] -->
   </body>
 </html>
+
